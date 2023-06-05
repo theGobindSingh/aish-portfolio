@@ -1,0 +1,118 @@
+@import "../../components/home/egg-text";
+
+main {
+  height: 95%;
+  width: 100%;
+  border-top: 2px solid var(--color-secondary);
+  border-bottom: 2px solid var(--color-secondary);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .top-part {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-stuff-container {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    .main-star-container {
+      position: absolute;
+      z-index: 2;
+      &.mstr-one {
+        --size: 9rem;
+        font-size: var(--size);
+        height: var(--size);
+        right: 5%;
+        &::after {
+          display: block;
+          position: absolute;
+          content: "";
+          height: var(--size);
+          --width: 3%;
+          width: var(--width);
+          top: 80%;
+          left: calc(50% - var(--width) / 2);
+          background-color: var(--color-primary-xDark);
+        }
+      }
+      &.mstr-two {
+        --size: 15rem;
+        font-size: var(--size);
+        height: calc(var(--size) + 30px);
+        right: 10%;
+        bottom: 0;
+      }
+    }
+    .main-img-wrapper {
+      height: 90%;
+      width: 600px;
+      border: 2px solid var(--color-primary-xDark);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-top-left-radius: 350px;
+      border-top-right-radius: 350px;
+      padding: 1%;
+      .star-container {
+        position: absolute;
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        &::before {
+          content: "";
+          height: 120%;
+          width: 10px;
+          background-color: var(--color-primary);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+        &.str-cont-one {
+          left: 0;
+          bottom: 20%;
+          transform: translateX(-50%);
+        }
+        &.str-cont-two {
+          top: 100px;
+          right: 20px;
+          rotate: -32.5deg;
+        }
+      }
+      .main-img {
+        height: 100%;
+        width: 100%;
+        background-color: var(--color-primary-dark);
+        border-top-left-radius: 350px;
+        border-top-right-radius: 350px;
+      }
+    }
+    .heading {
+      font-size: 12.5rem;
+      position: absolute;
+      top: 15%;
+      left: calc(50% - 300px);
+      transform: translateX(-50%);
+      color: var(--color-primary-xxDark);
+      font-weight: 400;
+      line-height: 10rem;
+    }
+    .egg-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

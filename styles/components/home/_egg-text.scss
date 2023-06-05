@@ -1,0 +1,42 @@
+.egg-wrapper {
+  font-family: "Gloock", serif;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  rotate: 35deg;
+  .egg-container {
+    position: absolute;
+    right: 30%;
+    height: 750px;
+    width: 550px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 50%;
+    border-bottom: 2px solid transparent;
+  }
+  .text {
+    font-size: 2rem;
+    position: absolute;
+    top: 68%;
+    right: 30%;
+    transform: rotate(43deg) translate(-240px, -90px);
+    font-family: "Gloock", serif;
+    color: var(--color-secondary);
+
+    .span-container {
+      font-family: "Gloock", serif;
+      position: absolute;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      text-align: center;
+      font-size: 1.7rem;
+      width: 2ch;
+
+      span {
+        font-style: italic;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+#home {
+  @import "../modules/home/styles";
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--color-primary);
+}
