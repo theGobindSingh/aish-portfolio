@@ -50,8 +50,8 @@ main {
       }
     }
     .main-img-wrapper {
-      height: 90%;
-      width: 600px;
+      height: 85%;
+      width: 550px;
       border: 2px solid var(--color-primary-xDark);
       position: absolute;
       top: 50%;
@@ -107,12 +107,12 @@ main {
       font-weight: 400;
       line-height: 10rem;
     }
-    .egg-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-    }
+    // .egg-wrapper {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   height: 100%;
+    //   width: 100%;
+    // }
   }
 }

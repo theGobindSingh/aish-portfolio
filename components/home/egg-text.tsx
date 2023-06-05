@@ -6,7 +6,7 @@ interface EggTextProps {
 }
 
 export default function EggText(props: EggTextProps) {
-  const { text, rotationAlpha = 4.5 } = props;
+  const { text, rotationAlpha = 6.2 } = props;
 
   const textArr = text.split("");
 
