@@ -1,38 +1,41 @@
 .egg-wrapper {
   font-family: "Gloock", serif;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  rotate: 35deg;
+  width: 800px;
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   .egg-container {
+    rotate: 50deg;
     position: absolute;
-    right: 30%;
-    height: 750px;
-    width: 550px;
+    left: 140px;
+    top: -30px;
+    height: 900px;
+    width: 480px;
     border: 2px solid var(--color-secondary);
     border-radius: 50%;
     border-bottom: 2px solid transparent;
   }
   .text {
+    rotate: 40deg;
     font-size: 2rem;
     position: absolute;
-    top: 68%;
-    right: 30%;
-    transform: rotate(43deg) translate(-240px, -90px);
+    top: 880px;
+    left: 580px;
+    transform: rotate(68deg) translate(-140px, 330px);
     font-family: "Gloock", serif;
     color: var(--color-secondary);
-
     .span-container {
       font-family: "Gloock", serif;
       position: absolute;
-      height: 500px;
+      height: 320px;
       display: flex;
       justify-content: center;
       align-items: flex-end;
       text-align: center;
       font-size: 1.7rem;
       width: 2ch;
-
       span {
         font-style: italic;
         font-size: 1.5rem;
